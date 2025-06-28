@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Bachelor Hub</title>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+		integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style>
+		main {
+			width: 100%;
+			height: 800px;
+			margin: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<nav id="navbar">
+			<div id="logo">Bachelor Hub</div>
+			<ul>
+				<li class="item"><a href="../index.html">Home</a></li>
+				<li class="item"><a href="../gallery.html">Gallery</a></li>
+				<li class="item"><a href="../product.html">Products</a></li>
+				<li class="item"><a href="../about_us.html">About Us</a></li>
+				<li class="item"><a href="../contact_us.html">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section class="banner">
+		<h1>Discover Our Exclusive Products</h1>
+		<p>Find the best deals and latest arrivals here.</p>
+		<button>Shop Now</button>
+	</section>
+
+	<CENTER>
+  <h2>Browse by Category</h2>
+  </CENTER><BR>
+
+    <div class="categories">
+    <a href="Gaming Accessories.html" class="category">
+      <p>Gaming Accessories</p>
+    </a>
+    <a href="Male cothing.html" class="category">
+      <p>Male clothing</p>
+    </a>
+    <a href="female clothing.html" class="category">
+      <p>Female cothing</p>
+    </a>
+    <a href="Watches.html" class="category">
+      <p>Watches</p>
+    </a>
+    <a href="shoes.html" class="category">
+      <p>Shoes</p>
+    </a>
+    
+  </div>
+  <br> <br>
+
+
+	<center>
+	<h2>some product of Gaming Accessories</h2>
+</center>
+<br>
+	<section class="products">
+
+		<div class="product-card">
+			<img src="GamingAccessories/logitech.png" alt="Mouse" />
+			<h3>logitech 502 HERO</h3>
+			<p>RS.5000</p>
+		<button onclick="buyNow('logitech 502 HERO', 5000)">Buy Now</button>
+		</div>
+		<div class="product-card">
+			<img src="GamingAccessories/Fantech.png" alt="Product 2" />
+			<h3>Fantech GAMING KEYBOARD</h3>
+			<p>RS.1500</p>
+			<button onclick="buyNow(' Fantech GAMING KEYBOARD', 1500)">Buy Now</button>
+		</div>
+		<div class="product-card">
+			<img src="GamingAccessories/Game Controller.png" alt="Product 3" />
+			<h3>GAMING Controller</h3>
+			<p>RS.2000</p>
+			<button onclick="buyNow('GAMING Controller', 2000)">Buy Now</button>
+		</div>
+		<div class="product-card">
+			<img src="GamingAccessories/Hyperxcloud.png" alt="Product 4" />
+			<h3>HYPERX CLOUD II</h3>
+			<p>RS.25000</p>
+			<button onclick="buyNow('HYPERX CLOUD II', 25000)">Buy Now</button>
+		</div>
+		<div class="product-card">
+			<img src="GamingAccessories/mouse pad.png" alt="Product 5" />
+			<h3>FANTECH GAMING DESKMAT</h3>
+			<p>RS.3000</p>
+			<button onclick="buyNow('FANTECH GAMING DESKMAT', 3000)">Buy Now</button>
+		</div>
+		<div class="product-card">
+			<img src="GamingAccessories/phone cooler.png" alt="Product 6" />
+			<h3>PHONE COOLER FOR GAMERS</h3>
+			<p>RS.350</p>
+			<button onclick="buyNow('PHONE COOLER FOR GAMERS', 350)">Buy Now</button>
+		</div>
+		
+	</section>
+	<footer>
+
+		<div class="footercontainer">
+			<div class="socialicons">
+
+				<a href="#"><i class=" fa-brands fa-facebook"></i></a>
+				<a href=" #"><i class=" fa-brands fa-instagram"></i></a>
+				<a href=" #"><i class=" fa-brands fa-whatsapp"></i></a>
+				<a href=" #"><i class=" fa-brands fa-twitter"></i></a>
+				<a href=" #"><i class=" fa-brands fa-viber"></i></a>
+
+			</div>
+
+			<div class=" footernav">
+										<ul>
+											<li><a href="#">Home</a></li>
+											<li><a href="#">Gallery</a></li>
+											<li><a href="#">Products</a></li>
+											<li><a href="#">About Us</a></li>
+										</ul>
+			</div>
+		</div>
+		<div class="footerbottom">
+			<p>Copyright &copy; 2025 All rights reserved</p>
+		</div>
+	</footer>
+
+  <script>
+    function buyNow(name, price) {
+      const url = `checkout.html?name=${encodeURIComponent(name)}&price=${price}`;
+      window.location.href = url;
+    }
+  </script>
+</body>
+</html>

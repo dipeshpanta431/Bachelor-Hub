@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Assets/CSS/contact_us.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div id="logo">Bachelor Hub</div>
+            <ul>
+                <li class="item"><a href="index.html">Home</a></li>
+                <li class="item"><a href="gallery.html">Gallery</a></li>
+                <li class="item"><a href="product.html">Products</a></li>
+                <li class="item"><a href="about_us.html">About Us</a></li>
+                <li class="item"><a href="contact_us.html">Contact Us</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main">
+            <div id="heading">
+                <h2 id="contact">Contact Us</h2>
+                <p id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium tempora perspiciatis
+                    enim fugiat cupiditate. Nemo asperiores necessitatibus suscipit maxime quis eos consectetur illo
+                    laudantium fugit corpori</p>
+            </div>
+        </div>
+        <div id="mbox12">
+
+            <div id="mbox1">
+                <div class="inmbox1" id="address">
+                    <div class="aimage">
+                        <img class="aimg" src="./Assets/image/address.png" alt="location">
+                    </div>
+                    <div class="titlema">
+                        <h2>
+                            Address
+                        </h2>
+                    </div>
+                    <div class="intitlema">
+                        <p> new-baneshwor,kathmandu</p>
+                    </div>
+
+
+                </div>
+                <div class="inmbox1" id="phone">
+                    <div class="aimage">
+                        <img class="aimg" src="./Assets/image/call.png" alt="location">
+                    </div>
+                    <div class="titlema">
+                        <h2>
+                            Phone
+                        </h2>
+                    </div>
+                    <div class="intitlema">
+                        <p>01-4990303</p>
+                    </div>
+
+                </div>
+                <div class="inmbox1" id="email">
+                    <div class="aimage">
+                        <img class="aimg" src="./Assets/image/mail.png" alt="location">
+                    </div>
+                    <div class="titlema">
+                        <h2>
+                            E-mail
+                        </h2>
+                    </div>
+                    <div class="intitlema">
+                        <p>bachelorhub321@gmail.com</p>
+                    </div>
+
+
+                </div>
+            </div>
+            <div id="mbox2">
+                <form id="rmessage" action="#" method="get">
+                    <fieldset id="fset">
+                        <legend>Send Message</legend>
+                        <div class="formelement">
+                            <h3>Full Name:</h3>
+                            <input class="uinput" type="text" name="uname" required minlength="3"
+                                placeholder="Enter your full name" />
+                        </div>
+                        <div class="formelement">
+                            <h3>Email:</h3>
+                            <input class="uinput" type="email" name="umail" required
+                                placeholder="Enter a valid email" />
+                        </div>
+                        <div class="formelement">
+                            <h3>Type your message:</h3>
+                            <textarea class="uinput" name="umessage" id="umessage" required minlength="10"
+                                placeholder="Write your message"></textarea>
+                        </div>
+                        <div class="formelement">
+                            <input type="submit" value="Submit" id="submit" />
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <footer>
+
+            <div class="footercontainer">
+                <div class="socialicons">
+
+                    <a href="#"><i class=" fa-brands fa-facebook"></i></a>
+                    <a href=" #"><i class=" fa-brands fa-instagram"></i></a>
+                    <a href=" #"><i class=" fa-brands fa-whatsapp"></i></a>
+                    <a href=" #"><i class=" fa-brands fa-twitter"></i></a>
+                    <a href=" #"><i class=" fa-brands fa-viber"></i></a>
+
+                </div>
+
+                <div class=" footernav">
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/gallery.html">Gallery</a></li>
+                        <li><a href="/product.html">Products</a></li>
+                        <li><a href="about_us.html">About Us</a></li>
+                        <li><a href="contact_us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footerbottom">
+                <p>Copyright &copy; 2025 All rights reserved</p>
+            </div>
+        </footer>
+        <!-- JavaScript validation script -->
+        <script>
+            document.getElementById('rmessage').addEventListener('submit', function (event) {
+                const name = document.querySelector('input[name="uname"]').value.trim();
+                const email = document.querySelector('input[name="umail"]').value.trim();
+                const message = document.querySelector('textarea[name="umessage"]').value.trim();
+
+                const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+                if (name.length < 3) {
+                    alert("Name must be at least 3 characters long.");
+                    event.preventDefault();
+                    return;
+                }
+
+                if (!email.match(emailPattern)) {
+                    alert("Please enter a valid email address.");
+                    event.preventDefault();
+                    return;
+                }
+
+                if (message.length < 10) {
+                    alert("Message must be at least 10 characters long.");
+                    event.preventDefault();
+                    return;
+                }
+            });
+        </script>
+
+</body>
+
+</html>

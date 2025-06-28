@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Checkout</title>
+  <style>
+    /* Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    body {
+      background: #f5f7fa;
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 120vh;
+      margin: 0;
+    }
+
+    .checkout-container {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      width: 390px;
+      padding: 30px 25px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 25px;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 15px;
+      color: #555;
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+      width: 90%;
+      padding: 10px 12px;
+      border-radius: 6px;
+      border: 1.5px solid #ddd;
+      font-size: 16px;
+      transition: border-color 0.3s ease;
+    }
+
+    input[type="text"]:read-only {
+      background-color: #f0f0f0;
+      color: #666;
+    }
+
+    input[type="number"]:focus,
+    input[type="text"]:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      background-color: #007bff;
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="checkout-container">
+    <h2>product detail</h2>
+    <form id="checkoutForm">
+      <label for="productName">Product Name:</label>
+      <input type="text" id="productName" name="productName" readonly />
+
+      <label for="productPrice">Price ($):</label>
+      <input type="text" id="productPrice" name="productPrice" readonly />
+
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" value="1" min="1" />
+
+      <button type="submit">confirm</button>
+      <button type="button" onclick="window.location.href='index.html'">Cancel</button>
+    </form>
+  </div>
+
+  <script>
+    // Parse URL parameters
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get('name');
+    const price = params.get('price');
+
+    // Auto-fill the form inputs
+    if (name && price) {
+      document.getElementById('productName').value = name;
+      document.getElementById('productPrice').value = price;
+    }
+
+    // Optional: handle form submit
+    document.getElementById('checkoutForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Order placed successfully!\n' +
+            'Product: ' + document.getElementById('productName').value + '\n' +
+            'Quantity: ' + document.getElementById('quantity').value);
+      // Here you can add your order processing logic
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+#images{
+	
+		
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color:rgb(18, 35, 61);
+    
+}
+.box{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    height:300px;
+    width: 23%;
+    background-color: beige;
+}
+#title{
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    color:whitesmoke;
+    background-color: rgb(18, 35, 61);
+    font-family:'Courier New', Courier, monospace;
+    font-size: 40px;
+    font-style: italic;
+    
+}
+.inbox{
+    width:100%;
+    height: 100%;
+}
+.inbox:hover{
+    transition: 0.5s;
+    cursor: pointer;
+    transform: scale(1.1);
+}

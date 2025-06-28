@@ -1,0 +1,42 @@
+#about {
+    text-align: center;
+    background-color: beige;
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+a {
+    border-style: double;
+    background-color: orangered;
+    color: white;
+    text-decoration: none;
+    margin-right: 25px;
+    padding: 5px;
+    transition: background-color 0.3s;
+}
+
+a:hover {
+    background-color: darkorange; 
+}
+
+#team {
+    text-align: center;
+    margin-top: 20px; 
+    color: rgb(145, 26, 26);
+    font-size: 24px; 
+}
+
+.desc {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 10px 0; 
+    line-height: 1.6; 
+}
+
+img {
+    display: block; 
+    margin: 20px auto; 
+    width: 400px;
+    border-radius: 10px;
+}
