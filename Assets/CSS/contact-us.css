@@ -1,0 +1,149 @@
+/* =====================
+   BASE
+===================== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    width: 100%;
+    background-color: aqua;
+    padding: 40px 0;
+}
+
+/* =====================
+   HEADING
+===================== */
+#heading {
+    text-align: center;
+    padding: 10px;
+}
+
+#contact {
+    font-size: 30px;
+    font-weight: bold;
+    color: navy;
+}
+
+#para {
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+/* =====================
+   MAIN BOX
+===================== */
+#mbox12 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* LEFT INFO BOX */
+#mbox1,
+#mbox2 {
+    flex: 1;
+}
+
+/* INFO ITEMS */
+.inmbox1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.aimage {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.aimg {
+    width: 100%;
+    height: auto;
+}
+
+.titlema h2 {
+    font-size: 18px;
+    color: purple;
+    margin: 0;
+}
+
+.intitlema p {
+    font-size: 16px;
+    margin: 0px 20px 0;
+}
+
+/* =====================
+   FORM
+===================== */
+#fset {
+    border: 2px solid grey;
+    background-color: white;
+    padding: 20px;
+}
+
+legend {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: rgb(106, 106, 172);
+}
+
+.formelement {
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: coral;
+    margin-bottom: 5px;
+}
+
+.uinput {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid goldenrod;
+    font-size: 16px;
+}
+
+#submit {
+    width: 150px;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: orange;
+    background-color: black;
+    cursor: pointer;
+}
+
+/* =====================
+   MEDIA QUERY (TABLET & MOBILE)
+===================== */
+@media (max-width: 768px) {
+    #mbox12 {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #mbox1,
+    #mbox2 {
+        width: 100%;
+    }
+
+    #contact {
+        font-size: 26px;
+    }
+
+    #para {
+        padding: 0 15px;
+    }
+
+    #submit {
+        width: 100%;
+    }
+}

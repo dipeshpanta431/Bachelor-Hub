@@ -1,47 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-<!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Bachelor Hub</title>
-	<link rel="stylesheet" href="Assets/CSS/product.css" />
+	<title>Product Page</title>
+	<link rel="stylesheet" href="Assets/CSS/product.css"/>
+	<link rel="stylesheet" href="Assets/CSS/main.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 		integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<style>
-		main {
-			width: 100%;
-			height: 800px;
-			margin: 10px;
-		}
-	</style>
 </head>
 
 <body>
 	<header>
-		<nav id="navbar">
-			<div id="logo">Bachelor Hub</div>
-			<ul>
-				<li class="item"><a href="index.html">Home</a></li>
-				<li class="item"><a href="gallery.html">Gallery</a></li>
-				<li class="item"><a href="product.html">Products</a></li>
-				<li class="item"><a href="about_us.html">About Us</a></li>
-				<li class="item"><a href="contact_us.html">Contact Us</a></li>
-			</ul>
-		</nav>
-	</header>
+<nav id="navbar">
+    <div id="logo">Bachelor Hub</div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="about_us.html">About Us</a></li>
+        <li><a href="contact_us.html">Contact Us</a></li>
+    </ul>
+</nav>
+</header>
 
 	<section class="banner">
 		<h1>Discover Our Exclusive Products</h1>
 		<p>Find the best deals and latest arrivals here.</p>
 		<button>Shop Now</button>
 	</section>
-	 
+	 <center>
   <h2>Browse by Category</h2>
-
+		</center>
+		
   <div class="categories">
     <a href="products/Gaming Accessories.html" class="category">
       <p>Gaming Accessories</p>
@@ -144,36 +134,20 @@
 	</section>
 	<footer>
 
-		<div class="footercontainer">
-			<div class="socialicons">
-
-				<a href="#"><i class=" fa-brands fa-facebook"></i></a>
-				<a href=" #"><i class=" fa-brands fa-instagram"></i></a>
-				<a href=" #"><i class=" fa-brands fa-whatsapp"></i></a>
-				<a href=" #"><i class=" fa-brands fa-twitter"></i></a>
-				<a href=" #"><i class=" fa-brands fa-viber"></i></a>
-
-			</div>
-
-			<div class=" footernav">
-										<ul>
-											<li><a href="#">Home</a></li>
-											<li><a href="#">Gallery</a></li>
-											<li><a href="#">Products</a></li>
-											<li><a href="#">About Us</a></li>
-										</ul>
-			</div>
-		</div>
-		<div class="footerbottom">
-			<p>Copyright &copy; 2025 All rights reserved</p>
-		</div>
-	</footer>
-	 <script>
-    function buyNow(name, price) {
-      const url = `checkout.html?name=${encodeURIComponent(name)}&price=${price}`;
-      window.location.href = url;
-    }
-  </script>
+		<footer>
+  <div class="footercontainer">
+    <div class="socialicons">
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+  </div>
+  <div class="footerbottom">
+    <p>Copyright © 2025</p>
+  </div>
+</footer>
+	 <script src="Assets/js/product.js"> </script>
 
 </body>
 

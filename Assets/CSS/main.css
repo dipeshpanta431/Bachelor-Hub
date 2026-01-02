@@ -1,0 +1,123 @@
+/* =====================
+   NAVBAR
+===================== */
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 0.5rem 2rem;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+}
+
+#logo {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: aquamarine;
+}
+
+#navbar ul {
+    display: flex;
+    gap: 1rem;
+}
+
+#navbar ul li {
+    list-style: none;
+}
+
+#navbar ul li a {
+    color: white;
+    padding: 6px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+
+#navbar ul li a:hover {
+    background: white;
+    color: black;
+}
+
+/* =====================
+   FOOTER
+===================== */
+footer {
+    background: #111;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.footercontainer {
+    padding: 2rem 1rem;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.socialicons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 1rem;
+}
+
+.socialicons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+.socialicons a i {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.socialicons a:hover {
+    transform: scale(1.1);
+}
+
+.footerbottom {
+    background: #000;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.footerbottom p {
+    color: white;
+    margin: 0;
+}
+
+/* =====================
+   MOBILE RESPONSIVENESS
+===================== */
+@media (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.1rem;
+    }
+
+    #navbar ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+
+    #navbar ul li {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    #navbar ul li a {
+        display: block;
+        width: 100%;
+        padding: 10px 15px;
+        text-align: left;
+    }
+}

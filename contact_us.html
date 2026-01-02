@@ -1,35 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <title>Contact Page</title>
-    <link rel="stylesheet" href="Assets/CSS/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="Assets/CSS/contact_us.css">
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="Assets/CSS/contact-us.css">
+    <link rel="stylesheet" href="Assets/CSS/main.css">
 </head>
 
 <body>
+
     <header>
         <nav id="navbar">
             <div id="logo">Bachelor Hub</div>
             <ul>
-                <li class="item"><a href="index.html">Home</a></li>
-                <li class="item"><a href="gallery.html">Gallery</a></li>
-                <li class="item"><a href="product.html">Products</a></li>
-                <li class="item"><a href="about_us.html">About Us</a></li>
-                <li class="item"><a href="contact_us.html">Contact Us</a></li>
-
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
         <div class="main">
             <div id="heading">
@@ -114,62 +110,27 @@
             </div>
         </div>
     </main>
+
+
     <footer>
-        <footer>
-
-            <div class="footercontainer">
-                <div class="socialicons">
-
-                    <a href="#"><i class=" fa-brands fa-facebook"></i></a>
-                    <a href=" #"><i class=" fa-brands fa-instagram"></i></a>
-                    <a href=" #"><i class=" fa-brands fa-whatsapp"></i></a>
-                    <a href=" #"><i class=" fa-brands fa-twitter"></i></a>
-                    <a href=" #"><i class=" fa-brands fa-viber"></i></a>
-
-                </div>
-
-                <div class=" footernav">
-                    <ul>
-                        <li><a href="/index.html">Home</a></li>
-                        <li><a href="/gallery.html">Gallery</a></li>
-                        <li><a href="/product.html">Products</a></li>
-                        <li><a href="about_us.html">About Us</a></li>
-                        <li><a href="contact_us.html">Contact Us</a></li>
-                    </ul>
-                </div>
+        <div class="footercontainer">
+            <div class="socialicons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
             </div>
-            <div class="footerbottom">
-                <p>Copyright &copy; 2025 All rights reserved</p>
-            </div>
-        </footer>
-        <!-- JavaScript validation script -->
-        <script>
-            document.getElementById('rmessage').addEventListener('submit', function (event) {
-                const name = document.querySelector('input[name="uname"]').value.trim();
-                const email = document.querySelector('input[name="umail"]').value.trim();
-                const message = document.querySelector('textarea[name="umessage"]').value.trim();
+        </div>
+        <div class="footerbottom">
+            <p>Copyright © 2025</p>
+        </div>
+    </footer>
 
-                const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+</body>
 
-                if (name.length < 3) {
-                    alert("Name must be at least 3 characters long.");
-                    event.preventDefault();
-                    return;
-                }
-
-                if (!email.match(emailPattern)) {
-                    alert("Please enter a valid email address.");
-                    event.preventDefault();
-                    return;
-                }
-
-                if (message.length < 10) {
-                    alert("Message must be at least 10 characters long.");
-                    event.preventDefault();
-                    return;
-                }
-            });
-        </script>
+</html>
+<!-- JavaScript validation script -->
+<script src="Assets/js/contact.js"> </script>
 
 </body>
 

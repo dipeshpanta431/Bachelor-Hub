@@ -41,53 +41,8 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 
-/* =====================
-   HEADER (UNCHANGED)
-===================== */
-#navbar {
-    display:flex;
-    align-items:center;
-    position:relative;
-    width:100%;
-}
 
-#navbar::before {
-    content:"";
-    background:black;
-    height:100%;
-    width:100%;
-    opacity:0.8;
-    position:absolute;
-    z-index:-1;
-}
 
-#logo {
-    margin:10px 24px;
-    font-size:20px;
-    font-weight:bolder;
-    color:aquamarine;
-}
-
-#navbar ul {
-    display:flex;
-}
-
-#navbar ul li {
-    list-style:none;
-    font-size:18px;
-}
-
-#navbar ul li a {
-    color:white;
-    padding:3px 22px;
-    border-radius:20px;
-    text-decoration:none;
-}
-
-#navbar ul li a:hover {
-    background:white;
-    color:black;
-}
 
 /* =====================
    HERO SECTION (REFERENCE STYLE)
@@ -180,75 +135,12 @@
     color:#475569;
 }
 
-/* =====================
-   FOOTER (UNCHANGED)
-===================== */
-footer{
-    background:#111;
-}
-
-.footercontainer{
-    padding:20px 10px;
-}
-
-.socialicons{
-    display:flex;
-    justify-content:center;
-}
-
-.socialicons a{
-    padding:5px;
-    background:white;
-    margin:10px;
-    border-radius:50%;
-}
-
-.socialicons a i{
-    font-size:1.5em;
-    color:black;
-}
-
-.footerbottom{
-    background:#000;
-    text-align:center;
-    padding:10px;
-}
-
-.footerbottom p{
-    color:white;
-}
-
-
 
 
 
 
 
 @media (max-width: 768px) {
-    /* NAVBAR: vertical menu and smaller padding */
-    #navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px 20px;
-        margin-left: -20px;
-    }
-
-    #navbar ul {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    #navbar ul li {
-        width: 100%;
-    }
-
-    #navbar ul li a {
-        display: block;
-        padding: 10px;
-        width: 100%;
-        text-align: left;
-    }
-
     /* HERO SECTION: smaller text */
     .hero-content h1 {
         font-size: 2rem;

@@ -1,38 +1,67 @@
-#images{
-	
-		
+/* =====================
+   GALLERY STYLES
+===================== */
+#title {
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+    color: whitesmoke;
+    background-color: rgb(18, 35, 61);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    font-style: italic;
+    width: 100%;
+}
+
+#images {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-color:rgb(18, 35, 61);
-    
+    background-color: rgb(18, 35, 61);
+    width: 100%;
 }
-.box{
-    margin-top: 20px;
-    margin-bottom: 20px;
 
-    height:300px;
+.box {
+    margin: 20px 0;
+    height: 280px;
     width: 23%;
     background-color: beige;
+    border-radius: 25px;
+    overflow: hidden; /* Ensures hover scaling doesn't overflow */
 }
-#title{
-    box-sizing: border-box;
-    text-align: center;
-    justify-content: center;
-    padding: 10px;
-    color:whitesmoke;
-    background-color: rgb(18, 35, 61);
-    font-family:'Courier New', Courier, monospace;
-    font-size: 40px;
-    font-style: italic;
-    
+
+.inbox {
+    width: 100%;
+    /* height: 100%; */
+    border-radius: 25px;
+    transition: 0.5s; /* move transition here */
 }
-.inbox{
-    width:100%;
-    height: 100%;
-}
-.inbox:hover{
-    transition: 0.5s;
+
+.inbox:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
+
+/* =====================
+   MEDIA QUERY FOR MOBILE
+===================== */
+@media (max-width: 768px) {
+    #title {
+        font-size: 30px;
+        padding: 9px;
+        width: 100.6%;
+    }
+
+    .box {
+        width: 45%; /* Two images per row */
+        height: 200px;
+        margin: 10px 0;
+       
+    }
+
+    #images {
+        width: 100.6%;
+    }
+}
+
+

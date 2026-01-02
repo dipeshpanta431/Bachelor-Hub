@@ -1,0 +1,177 @@
+/* =====================
+   BASE STYLES
+===================== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+  color: #222;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+/* =====================
+   LAYOUT
+===================== */
+section {
+  padding: 90px 15px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* =====================
+   BUTTON
+===================== */
+a.cta {
+  padding: 10px 30px;
+  background-color: #f72d3d;
+  border-radius: 25px;
+  color: white;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+a.cta:hover {
+  background-color: #f75763;
+  color: black;
+}
+
+/* =====================
+   BANNER
+===================== */
+.banner {
+  background: linear-gradient(
+      rgba(241, 157, 0, 0.8),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../img/banner.jpg") center/cover no-repeat;
+  text-align: center;
+}
+
+.banner h1 {
+  color: white;
+  font-weight: bold;
+}
+
+.banner p {
+  color: white;
+  font-size: 1.3rem;
+}
+
+/* =====================
+   SECTIONS
+===================== */
+.first {
+  background: linear-gradient(315deg, #f5c45e, #92cfed);
+}
+
+.first .container {
+  max-width: 800px;
+}
+
+.second {
+  background-color: #e78b48;
+}
+
+.third {
+  background-color: #be3d2a;
+}
+
+.third .container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.third .left-content {
+  flex: 1;
+}
+
+.four {
+  background-color: #0d87c4;
+}
+
+.four .container {
+  display: flex;
+  gap: 20px;
+}
+
+/* =====================
+   TEAM MEMBERS
+===================== */
+.member {
+  background-color: #c0c6fa;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+  flex: 1;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.member:hover {
+  transform: scale(1.05);
+}
+
+/* =====================
+   MEDIA QUERY – TABLET
+===================== */
+@media (max-width: 768px) {
+  section {
+    padding: 60px 15px;
+  }
+  .about {
+    width: 100.5%;
+  }
+
+  
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .third .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .four .container {
+    flex-wrap: wrap;
+  }
+
+  .member {
+    flex-basis: 45%;
+  }
+}
+
+
