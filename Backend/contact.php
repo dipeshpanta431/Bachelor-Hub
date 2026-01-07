@@ -20,9 +20,8 @@ $conn=mysqli_connect('localhost','root','') or die('connection error');
      message varchar(400)
 )";
 
-mysqli_query($conn, $createtbl) or die("Tale Creation Error");
+mysqli_query($conn, $createtbl) or die("Table Creation Error");
     $insert = "INSERT INTO contact (name, email, message) VALUES('$name', '$email', '$message')";
     mysqli_query($conn,$insert) or die('insertion failed');
-    header("Location:./contact_us.html");
     }
 ?>

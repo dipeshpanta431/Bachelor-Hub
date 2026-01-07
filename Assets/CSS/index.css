@@ -69,7 +69,7 @@
 }
 
 .hero-content button{
-    padding:14px 40px;
+    padding:5px 20px;
     border:none;
     border-radius:50px;
     background:#2563eb;
@@ -162,6 +162,20 @@
     .feature-card {
         width: 90%;
     }
+}
+#shopNow{
+    text-decoration: none;
+    background-color: black;
+    color:white;
+    
+
+
+}
+#shopnow{
+    text-decoration: none;
+    color:white;
+font-size: 20px;
+
 }
 
 
