@@ -94,6 +94,7 @@
     padding:60px 20px;
     background:#f8fafc;
     flex-wrap:wrap;
+    
 }
 
 .feature-card{
@@ -109,6 +110,7 @@
 .feature-card:hover{
     transform:translateY(-8px);
     box-shadow:0 15px 40px rgba(0,0,0,0.15);
+    cursor: pointer;
 }
 
 .feature-card img{
@@ -127,6 +129,14 @@
     color:#475569;
 }
 
+#hsection{
+    display: inline-block;
+    width: 100%;
+    align-items: center;
+}
+#hreason{
+    text-align: center;
+}
 
 
 
