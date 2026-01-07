@@ -34,13 +34,19 @@
     border-radius: 20px;
     text-decoration: none;
     font-size: 22px;
-    transition: 0.3s ease;
+
 }
 
 
 #navbar ul li a:hover {
+    padding: 4px 16px;
+    border-radius: 20px;
     background: white;
     color: black;
+}
+
+.socialicons > a {
+    text-decoration: none;
 }
 
 /* =====================
@@ -83,6 +89,7 @@ footer {
 
 .socialicons a:hover {
     transform: scale(1.1);
+
 }
 
 .footerbottom {
