@@ -121,6 +121,12 @@ h3 {
     background-color: black;
     cursor: pointer;
 }
+#responseMsg {
+  background: #d4edda;
+  padding: 10px;
+  border-radius: 5px;
+}
+
 
 /* =====================
    MEDIA QUERY (TABLET & MOBILE)

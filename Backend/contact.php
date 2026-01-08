@@ -24,4 +24,5 @@ mysqli_query($conn, $createtbl) or die("Table Creation Error");
     $insert = "INSERT INTO contact (name, email, message) VALUES('$name', '$email', '$message')";
     mysqli_query($conn,$insert) or die('insertion failed');
     }
+    echo "success";
 ?>
